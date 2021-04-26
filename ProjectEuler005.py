@@ -7,6 +7,8 @@
     evenly divisible by all of the numbers from 1 to 20?
 """
 
+import time
+
 def smallmultiple(N):
     answer = 1
     list = []
@@ -22,4 +24,7 @@ def smallmultiple(N):
         answer = answer * list[i]
     return answer
 
+start = time.time()
 print(smallmultiple(20))
+print(time.time() - start)
+#232792560 in 0.0011513233184814453 secs

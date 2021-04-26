@@ -6,6 +6,8 @@
     Find the sum of all the multiples of 3 or 5 below 1000.
 """
 
+import time
+
 def sumof3or5(N):
     total = 0
     for n in range(N):
@@ -13,4 +15,7 @@ def sumof3or5(N):
             total += n   
     return total
 
+start = time.time()
 print(sumof3or5(1000))
+print(time.time() - start)
+#233168 in 0.0010285377502441406 secs

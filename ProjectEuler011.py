@@ -27,6 +27,7 @@
 """
 
 import numpy as np
+import time
 
 array = []
 array.append("08 02 22 97 38 15 00 40 00 75 04 05 07 78 52 12 50 77 91 08")
@@ -108,4 +109,7 @@ def largestproduct(matrix):
                 total = product
     return total
 
+start = time.time()
 print(largestproduct(matrix))
+print(time.time() - start)
+#70600674 in 0.0009975433349609375 secs

@@ -8,6 +8,8 @@
     find the sum of the even-valued terms.
 """
 
+import time
+
 def evenfibonacci(N):
     num1 = 1
     num2 = 2
@@ -21,4 +23,7 @@ def evenfibonacci(N):
         num2 += num1
     return fibsum
 
+start = time.time()
 print(evenfibonacci(4000000))
+print(time.time() - start)
+#4613732 in 0.0009975433349609375 secs

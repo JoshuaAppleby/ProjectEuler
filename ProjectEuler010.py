@@ -4,6 +4,9 @@
 """The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
     Find the sum of all the primes below two million.
 """
+
+import time
+
 def isitprime(p):
     for i in range(2,int(p**0.5)+1):
         if p % i == 0:
@@ -19,4 +22,7 @@ def sumprime(N):
             total += prime
     return total
 
+start = time.time()
 print(sumprime(2000000))
+print(time.time() - start)
+#142913828922 in 11.448681831359863 secs

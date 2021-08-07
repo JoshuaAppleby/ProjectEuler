@@ -6,7 +6,7 @@ Priorities:
 2. Use as few modules as possible in calculation
 
 To be improved:
-012: 15.631 secs
+012: 5.171 secs
 014: 23.425 secs
 021: 4.639 secs
 023: 14.188 secs
